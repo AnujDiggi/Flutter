@@ -57,34 +57,6 @@ void main() {
   }
 
 
-  // ---------------------------- Prime Numbers ----------------------------
-
-
-  int limits = 50;
-  int num = 2;
-
-  print('\nPrime numbers up to $limits\n');
-
-  while (num <= limits) {
-    bool isPrime = true;
-    int divisor = 2;
-
-    while (divisor <= num ~/ 2) {
-      if (num % divisor == 0) {
-        isPrime = false;
-        break;
-      }
-      divisor++;
-    }
-
-    if (isPrime) {
-      print(num);
-    }
-    num++;
-  }
-
-
-   
 
 
 
